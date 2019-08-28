@@ -28,8 +28,11 @@ document.onkeyup = function (event) {
     guesses = event.key;
 
     if (guesses === "a" || guesses === "b" || guesses === "c" || guesses === "d" || guesses === "e" || guesses === "f" || guesses === "g" || guesses === "h" || guesses === "i" || guesses === "j" || guesses === "k" || guesses === "l" || guesses === "m" || guesses === "n" || guesses === "o" || guesses === "p" || guesses === "q" || guesses === "r" || guesses === "s" || guesses === "t" || guesses === "u" || guesses === "v" || guesses === "w" || guesses === "x" || guesses === "y" || guesses === "z") {
+        
+        if (guessesArray.indexOf(guesses) === -1) {
 
         if (guessesLeft > 0 && randomWord.indexOf(guesses) > -1) {
+    
             for (var i = 0; i < randomWord.length; i++) {
                 if (randomWord[i] == guesses) {
                     wordBlank[i] = guesses;
@@ -39,6 +42,7 @@ document.onkeyup = function (event) {
                     }
                 }
             }
+
         }
         else if (guessesLeft > 0 && randomWord.indexOf(guesses) === -1) {
             guessesArray.push(guesses);
@@ -48,7 +52,11 @@ document.onkeyup = function (event) {
             losses++;
             wordGame();
         }
+    } 
+    else {
+        alert("Already guessed this letter")
     }
+}
     else {
         alert("Enter a lowercase letter")
     }
