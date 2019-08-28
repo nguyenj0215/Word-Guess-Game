@@ -7,6 +7,8 @@ var wordBlank;
 var guessesLeft;
 var wordList = ["lakers", "clippers", "warriors", "kings"];
 
+wordGame();
+
 function wordGame() {
 
     guessesArray = [];
@@ -31,10 +33,10 @@ document.onkeyup = function (event) {
             for (var i = 0; i < randomWord.length; i++) {
                 if (randomWord[i] == guesses) {
                     wordBlank[i] = guesses;
-                        if (wordBlank.join("") === randomWord) {
-                            wins++;
-                            wordGame();
-                        }
+                    if (wordBlank.join("") === randomWord) {
+                        wins++;
+                        wordGame();
+                    }
                 }
             }
         }
@@ -48,13 +50,13 @@ document.onkeyup = function (event) {
         }
     }
     else {
-        alert("Enter a letter")
+        alert("Enter a lowercase letter")
     }
 
-    console.log(wordBlank)
+    /*console.log(wordBlank)
     console.log(randomWord)
     console.log(guesses)
-    console.log(guessesArray)
+    console.log(guessesArray)*/
 
     document.getElementById("guessLeftDisplay").innerHTML = guessesLeft;
     document.getElementById("winDisplay").innerHTML = wins;
@@ -63,5 +65,3 @@ document.onkeyup = function (event) {
     document.getElementById("blankWordDisplay").innerHTML = wordBlank.join(" ");
 }
 
-//Function call to start game
-wordGame();

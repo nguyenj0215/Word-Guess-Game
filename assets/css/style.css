@@ -1,20 +1,38 @@
 body {
     margin: 0 auto;
+    background-color: rgb(39, 37, 37);
 }
 .headerBar {
     margin: 0 auto;
     text-align: center;
     padding: 25px;
-    background-image: linear-gradient(to top right, rgb(128, 128, 236), yellow);
+    background-image: linear-gradient(to bottom right, blue, green);
     font-size: 35px;
-    color: black;
+    color: yellow;
     font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    border-bottom: 5px solid orange;
 }
 section {
     margin: 0 auto;
-    border: 5px solid black;
+    border: 5px solid orange;
     margin-top: 25px;
     width: 40%;
     padding: 15px;
     line-height: 300%;
+    font-size: 20px;
+}
+.secBox {
+    border: 1px solid rgb(39, 37, 37);
+    padding: 15px;
+    background-color: white;
+}
+.secBoxHead {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: -10px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
