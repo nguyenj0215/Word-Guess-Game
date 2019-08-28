@@ -5,7 +5,7 @@ var guesses;
 var guessesArray;
 var wordBlank;
 var guessesLeft;
-var wordList = ["lakers", "clippers", "warriors", "kings"];
+var wordList = ["lakers", "clippers", "warriors", "kings", "raptors", "rockets", "bucks", "celtics", "pacers", "nuggets"];
 
 wordGame();
 
@@ -52,11 +52,6 @@ document.onkeyup = function (event) {
     else {
         alert("Enter a lowercase letter")
     }
-
-    /*console.log(wordBlank)
-    console.log(randomWord)
-    console.log(guesses)
-    console.log(guessesArray)*/
 
     document.getElementById("guessLeftDisplay").innerHTML = guessesLeft;
     document.getElementById("winDisplay").innerHTML = wins;

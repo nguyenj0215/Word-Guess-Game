@@ -15,7 +15,7 @@ body {
 }
 section {
     margin: 0 auto;
-    border: 5px solid orange;
+    border: 5px solid white;
     margin-top: 25px;
     width: 40%;
     padding: 15px;
@@ -26,6 +26,7 @@ section {
     border: 1px solid rgb(39, 37, 37);
     padding: 15px;
     background-color: white;
+    font-weight: bold;
 }
 .secBoxHead {
     margin: 0 auto;
@@ -35,4 +36,5 @@ section {
     margin-top: -10px;
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: underline;
 }
