@@ -1,0 +1,20 @@
+body {
+    margin: 0 auto;
+}
+.headerBar {
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px;
+    background-image: linear-gradient(to top right, rgb(128, 128, 236), yellow);
+    font-size: 35px;
+    color: black;
+    font-weight: bold;
+}
+section {
+    margin: 0 auto;
+    border: 5px solid black;
+    margin-top: 25px;
+    width: 40%;
+    padding: 15px;
+    line-height: 300%;
+}
