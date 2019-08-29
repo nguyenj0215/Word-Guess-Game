@@ -1,3 +1,4 @@
+//global variables
 var wins = 0;
 var losses = 0;
 var randomWord;
@@ -7,8 +8,10 @@ var wordBlank;
 var guessesLeft;
 var wordList = ["lakers", "clippers", "warriors", "kings", "raptors", "rockets", "bucks", "celtics", "pacers", "nuggets"];
 
+//execute game function
 wordGame();
 
+//game starting/restarting point
 function wordGame() {
 
     guessesArray = [];
@@ -23,6 +26,7 @@ function wordGame() {
 
 }
 
+//main game loop
 document.onkeyup = function (event) {
 
     guesses = event.key;
@@ -38,6 +42,7 @@ document.onkeyup = function (event) {
                     wordBlank[i] = guesses;
                     if (wordBlank.join("") === randomWord) {
                         wins++;
+                        alert("Correct! The answer was " + randomWord)
                         wordGame();
                     }
                 }
@@ -50,6 +55,7 @@ document.onkeyup = function (event) {
         }
         else {
             losses++;
+            alert("The answer was " + randomWord)
             wordGame();
         }
     } 
@@ -61,6 +67,7 @@ document.onkeyup = function (event) {
         alert("Enter a lowercase letter")
     }
 
+    //writing to HTML
     document.getElementById("guessLeftDisplay").innerHTML = guessesLeft;
     document.getElementById("winDisplay").innerHTML = wins;
     document.getElementById("lossDisplay").innerHTML = losses;
