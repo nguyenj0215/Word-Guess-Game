@@ -38,3 +38,19 @@ section {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-decoration: underline;
 }
+@media only screen and (max-width: 980px) {
+    section {
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    section {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    section {
+        width: 80%;
+    }
+}
