@@ -6,7 +6,9 @@ var guesses;
 var guessesArray;
 var wordBlank;
 var guessesLeft;
-var wordList = ["lakers", "clippers", "warriors", "kings", "raptors", "rockets", "bucks", "celtics", "pacers", "nuggets"];
+var wordList = ["lakers", "clippers", "warriors", "kings", "raptors", "rockets", "bucks", "celtics", "pacers", "nuggets", "jazz", "heat", "hornets", "suns", "pistons", "magic", "cavaliers", "hawks", "nets", "knicks", "mavericks", "grizzlies", "timberwolves", "pelicans", "thunder", "spurs" , "wizards"];
+//var wordList = ["trail blazers"]
+
 
 //execute game function
 wordGame();
@@ -42,6 +44,7 @@ document.onkeyup = function (event) {
                     wordBlank[i] = guesses;
                     if (wordBlank.join("") === randomWord) {
                         wins++;
+                        
                         alert("Correct! The answer was " + randomWord)
                         wordGame();
                     }
